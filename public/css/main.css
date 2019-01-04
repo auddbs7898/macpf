@@ -1,0 +1,12 @@
+@import 'base.css';
+
+#wrap{ width:100%; padding: 0;}
+.container{ width: 100%; margin: auto; position: relative;}
+
+
+.left{float: left; background-color: #c10d0e; width: 30%; }
+.left_inner{}
+.left_title{}
+
+.right{float: left; width: calc(100% - 30%)}
+
