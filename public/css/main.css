@@ -1,12 +1,81 @@
 @import 'base.css';
 
-#wrap{ width:100%; padding: 0;}
-.container{ width: 100%; margin: auto; position: relative;}
+#wrap{ 
+    width:100%; 
+    padding: 0;}
+.container{ 
+    width: 100%; 
+    margin: auto; 
+    position: relative; 
+    padding: 0 !important;}
 
+/*왼쪽 페이지*/
+.left{
+    float: left;
+    background-color: #c10d0e; 
+    width: 40%; height: calc(100vh - 100px); 
+    box-sizing: border-box}
+.left_inner{ 
+    padding: 5rem 3rem;}
+.left_title{  
+    position: relative;   
+    margin: 0 auto;
+    max-width: 400px; 
+    font-size: 1.5rem;
+    text-align: center;}
+.left_title > ul{
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translateX(-50%)}
+.left_title > ul > li{
+    position: absolute; 
+    width: 260px; 
+    line-height: 180%;
+}
+.left_title > ul > :nth-child(1) {background: brown;}
+.left_title > ul > :nth-child(2) {background: rgb(163, 86, 86);}
+.left_title > ul > :nth-child(3) {background: rgb(10, 7, 61);}
+.left_title > ul > :nth-child(4) {background: rgb(19, 153, 48);}
+.left_title > ul > :nth-child(5) {background: rgb(211, 224, 22);}
+.left_title > ul > :nth-child(6) {background: rgb(80, 10, 13);}
+/*왼쪽 페이지 버튼*/
+.left_btns{
+    max-width: 138px;
+    margin: 3rem auto;}
+.left_btns li{ 
+    padding-left: 0.25rem}
+.left_btns > .btnT{
+    width: 100%}
+.left_btns > .btnU{}
+.left_btns .btns{ 
+    background: url(../img/icon.png) no-repeat 0 0;
+    height: 17px;
+    width: 19px;
+    float: left;}
+.btnT > .btn1 > .btns{background-position: -62px -8px; }
+.btnT > .btn2 > .btns{background-position: -82px -8px;}
+.btnT > .btn3 > .btns{background-position: -102px -8px;}
+.btnT > .btn4 > .btns{ background-position: -123px -8px;}
+.btnT > .btn5 > .btns{background-position: -143px -8px; }
+.btnT > .btn6 > .btns{background-position: -163px -8px; }
+.btnU > .btn7 > .btns{background-position: -183px -8px;  }
+.btnU > .btn8 > .btns{ background-position: -204px -8px; }
 
-.left{float: left; background-color: #c10d0e; width: 30%; }
-.left_inner{}
-.left_title{}
+/*왼쪽 페이지 배너*/
+.left_banner{ 
+    margin-top: 8rem;}
+.left_banner > ul >li{ 
+    float: left;}
 
-.right{float: left; width: calc(100% - 30%)}
+/*오른쪽 페이지*/
+.right{
+    float: left; 
+    width: calc(100% - 30%)}
+
+/*하단*/
+footer{ 
+    background-color: #333; 
+    width: 100%; 
+    height: 100px;}
 
