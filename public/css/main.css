@@ -7,13 +7,15 @@
     width: 100%; 
     margin: auto; 
     position: relative; 
-    padding: 0 !important;}
+    padding: 0 !important;
+    height: calc(100vh - 100px); }
 
 /*왼쪽 페이지*/
 .left{
     float: left;
     background-color: #c10d0e; 
-    width: 40%; height: calc(100vh - 100px); 
+    width: 40%; 
+    height: 100%;
     box-sizing: border-box}
 .left_inner{ 
     padding: 5rem 3rem;}
@@ -23,22 +25,17 @@
     max-width: 400px; 
     font-size: 1.5rem;
     text-align: center;}
-.left_title > ul{
-    position: absolute; 
-    left: 50%; 
-    top: 50%; 
-    transform: translateX(-50%)}
+.left_title > ul{}
 .left_title > ul > li{
     position: absolute; 
-    width: 260px; 
+    width: 300px; 
     line-height: 180%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.left_title > ul > :nth-child(1) {background: brown;}
-.left_title > ul > :nth-child(2) {background: rgb(163, 86, 86);}
-.left_title > ul > :nth-child(3) {background: rgb(10, 7, 61);}
-.left_title > ul > :nth-child(4) {background: rgb(19, 153, 48);}
-.left_title > ul > :nth-child(5) {background: rgb(211, 224, 22);}
-.left_title > ul > :nth-child(6) {background: rgb(80, 10, 13);}
+.left_title > ul > li:first-child {opacity:1;}
 /*왼쪽 페이지 버튼*/
 .left_btns{
     max-width: 138px;
@@ -46,8 +43,10 @@
 .left_btns li{ 
     padding-left: 0.25rem}
 .left_btns > .btnT{
-    width: 100%}
-.left_btns > .btnU{}
+    width: 100%;
+    padding-bottom: 1rem;}
+.left_btns > .btnU{    
+    margin-left: 47px;}
 .left_btns .btns{ 
     background: url(../img/icon.png) no-repeat 0 0;
     height: 17px;
@@ -64,14 +63,20 @@
 
 /*왼쪽 페이지 배너*/
 .left_banner{ 
-    margin-top: 8rem;}
+    width: 240px;
+    margin: 5rem auto 0 auto;
+    }
 .left_banner > ul >li{ 
     float: left;}
+.left_banner > ul >li:first-child{ padding-bottom: 1rem;} 
+/*왼쪽 페이지 끝*/
 
 /*오른쪽 페이지*/
 .right{
     float: left; 
-    width: calc(100% - 30%)}
+    width: calc(100% - 40%)}
+.right > .right_inner{}
+.right .right01{ background: url(../img/slide1.png) no-repeat;}
 
 /*하단*/
 footer{ 

@@ -21,7 +21,7 @@ var FadeSlide = (function(){
 		this.delay = option.delay;
 		this.speed = option.speed;
 		this.depth = 0;
-		this.now = 0;
+		this.now = 1;
 		this.end = this.slide.length -1;
 		this.init(obj);
 	}
@@ -35,7 +35,9 @@ var FadeSlide = (function(){
     };
     FadeSlide.prototype.ani = function(obj){
 		var target = obj.slide.eq(obj.now);
+		var targetOther = obj.slide.not(":eq("+obj.now+")");
 		target.css({"z-index":obj.depth++, "opacity":0});
+		targetOther.delay(obj.delay).animate({"opacity":0});
 		target.delay(obj.delay).animate({"opacity":1}, obj.speed, function (){
 			console.log(obj.now);
 			if(obj.now == obj.end) obj.now = 0;
